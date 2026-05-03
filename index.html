@@ -175,22 +175,29 @@
 
         .meme-item {
             background: #ddd;
-            height: 250px;
+            height: auto;
             border-radius: 5px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #666;
+            color: #555;
             font-weight: bold;
             border: 2px dashed #bbb; /* Placeholder style */
         }
 
-        .meme-item img {
+        .meme-item a {
+            display: block;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
+        }
+
+        .meme-item a img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
             border-radius: 5px;
             display: block;
+            cursor: zoom-in;
         }
 
         /* --- Back to Top --- */
@@ -223,19 +230,21 @@
 <body>
 
     <nav>
-        <div class="logo">LEGAL_TECH PORTFOLIO</div>
+        <div class="logo">Digital Portfolio</div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#foundations">Foundations</a></li>
             <li><a href="#case">Case Analysis</a></li>
             <li><a href="#advocacy">Advocacy</a></li>
             <li><a href="#reflection">Reflection</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
         </ul>
     </nav>
 
     <header id="home">
-        <h1>Digital Freedom & Cyber Law</h1>
-        <p>A Professional Analysis on Expression in the Digital Age</p>
+        <h1>Freedom of Expression in the Digital Age: Rights, Limits, and Responsibility</h1>
+        <p><strong>Name:</strong> Leonard A. Alfanta</p>
+        <p style="max-width: 900px; margin-top: 20px;">Freedom of expression is a fundamental right guaranteed under the 1987 Philippine Constitution. In today’s digital age, this freedom extends to social media, blogs, and online platforms. However, with this freedom comes responsibility. The rise of cybercrime has led to laws like the Cybercrime Prevention Act of 2012 (RA 10175), which aims to regulate harmful online behavior while balancing individual rights. This portfolio explores the relationship between freedom and accountability in the digital space.</p>
     </header>
 
     <section id="foundations">
@@ -257,15 +266,21 @@
     </section>
 
     <section id="case" style="background: #eceff1;">
-        <h2 class="section-title">Case Analysis</h2>
+        <h2 class="section-title">⚖️ CASE ANALYSIS SECTION</h2>
         <div class="grid-container">
             <div class="card">
-                <h3>The Libel Conflict</h3>
-                <p>Analyzing the tension between individual reputation and the right to criticize public figures online.</p>
+                <h3>📌 Case 1: “The Viral Accusation Post” (March 15, 2024)</h3>
+                <p><strong>Scenario:</strong> A student posts on Facebook accusing a teacher of corruption without evidence. The post goes viral.</p>
+                <p><strong>Legal Issues:</strong> Is this freedom of expression? Does it fall under online libel?</p>
+                <p><strong>Analysis:</strong> This is not protected speech because it damages reputation without proof. It qualifies as cyber libel under RA 10175. The law was applied correctly if charges were filed.</p>
+                <p><strong>Personal Judgment:</strong> Freedom of expression should not be used to spread false accusations. Responsibility must come first.</p>
             </div>
             <div class="card">
-                <h3>Data Privacy Act</h3>
-                <p>A look at how personal data protection intersects with investigative journalism.</p>
+                <h3>📌 Case 2: “The Satirical Meme Against a Politician” (July 10, 2025)</h3>
+                <p><strong>Scenario:</strong> A student creates a meme criticizing a public official’s policies using humor and satire.</p>
+                <p><strong>Legal Issues:</strong> Is satire protected speech? Can it be punished?</p>
+                <p><strong>Analysis:</strong> This is protected speech because satire is part of free expression. No direct false claim or malicious intent was proven. The law should not penalize this act.</p>
+                <p><strong>Personal Judgment:</strong> Criticism, especially satire, is essential in a democratic society and must be protected.</p>
             </div>
         </div>
     </section>
@@ -292,10 +307,8 @@
         
         <h3 style="margin: 40px 0 20px; text-align:center;">Educational Awareness</h3>
         <div class="meme-gallery">
-            <div class="meme-item"><img src="dasdsa.png" alt="Meme series: dasdsa"></div>
-            <div class="meme-item"><img src="9860f199-918c-4cbc-9761-733b6611c1da.jfif" alt="Meme series: 9860f199-918c-4cbc-9761-733b6611c1da"></div>
-            <div class="meme-item">Meme: Secure Passwords</div>
-            <div class="meme-item">Meme: Public vs Private</div>
+            <div class="meme-item"><a href="7f2548cd-aca1-47b8-8099-53601b88f62c.jfif" target="_blank" rel="noopener"><img src="7f2548cd-aca1-47b8-8099-53601b88f62c.jfif" alt="Meme series: 7f2548cd-aca1-47b8-8099-53601b88f62c"></a></div>
+            <div class="meme-item"><a href="188d619c-a88c-4ae1-a859-6c4c3b39f762.jfif" target="_blank" rel="noopener"><img src="188d619c-a88c-4ae1-a859-6c4c3b39f762.jfif" alt="Meme series: 188d619c-a88c-4ae1-a859-6c4c3b39f762"></a></div>
         </div>
     </section>
 
@@ -303,6 +316,13 @@
         <h2 class="section-title">Reflection</h2>
         <div class="card" style="max-width: 800px; margin: 0 auto;">
             <p>The intersection of technology and law is the frontier of modern civil rights. Through this portfolio, we explore the delicate balance between keeping the internet a safe space for all and ensuring that the digital world remains a vibrant marketplace of ideas.</p>
+        </div>
+    </section>
+
+    <section id="conclusion" style="background: #eceff1;">
+        <h2 class="section-title">Conclusion</h2>
+        <div class="card" style="max-width: 900px; margin: 0 auto;">
+            <p>Freedom of expression remains a vital constitutional right, but its exercise in digital spaces must be guided by truthfulness, respect, and accountability. Laws such as RA 10175 exist to address harmful online conduct, especially when speech becomes defamatory or causes real-world harm. A healthy digital society protects criticism and satire while discouraging reckless accusations and misinformation. In the end, online freedom and responsibility must go together.</p>
         </div>
     </section>
 
