@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freedom of Expression & Cybercrime Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --navy: #0a192f;
+            --slate: #485563;
+            --electric-blue: #00d2ff;
+            --gold: #ffcc33;
+            --light: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--navy);
+            background-color: var(--light);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* --- Navigation --- */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 25, 47, 0.95);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .logo {
+            color: var(--gold);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--electric-blue);
+        }
+
+        /* --- Hero Section --- */
+        #home {
+            height: 100vh;
+            background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), 
+                        url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1350&q=80');
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+        }
+
+        #home h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        /* --- Global Layout --- */
+        section {
+            padding: 100px 10% 60px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--electric-blue);
+            margin: 10px auto;
+        }
+
+        /* --- Cards & Grid --- */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s, border-top 0.3s;
+            border-top: 4px solid var(--slate);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-top: 4px solid var(--electric-blue);
+        }
+
+        /* --- Infographic Area --- */
+        .infographic {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background: var(--navy);
+            color: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+        }
+
+        .info-point {
+            flex: 1 1 200px;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .info-icon {
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        /* --- Meme Gallery --- */
+        .meme-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .meme-item {
+            background: #ddd;
+            height: 250px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-weight: bold;
+            border: 2px dashed #bbb; /* Placeholder style */
+        }
+
+        .meme-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            display: block;
+        }
+
+        /* --- Back to Top --- */
+        #backToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--gold);
+            color: var(--navy);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            #home h1 { font-size: 2.2rem; }
+            nav { flex-direction: column; }
+            nav ul { margin-top: 15px; }
+            nav ul li { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">LEGAL_TECH PORTFOLIO</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#foundations">Foundations</a></li>
+            <li><a href="#case">Case Analysis</a></li>
+            <li><a href="#advocacy">Advocacy</a></li>
+            <li><a href="#reflection">Reflection</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>Digital Freedom & Cyber Law</h1>
+        <p>A Professional Analysis on Expression in the Digital Age</p>
+    </header>
+
+    <section id="foundations">
+        <h2 class="section-title">Foundations</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Freedom of Expression</h3>
+                <p>The fundamental right to hold opinions and receive/impart information without interference by public authority.</p>
+            </div>
+            <div class="card">
+                <h3>Cybercrime Law</h3>
+                <p>Legislation aimed at protecting digital integrity while balancing the rights of internet users.</p>
+            </div>
+            <div class="card">
+                <h3>Digital Rights</h3>
+                <p>Human rights that allow individuals to access, use, create, and publish digital media.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="case" style="background: #eceff1;">
+        <h2 class="section-title">Case Analysis</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>The Libel Conflict</h3>
+                <p>Analyzing the tension between individual reputation and the right to criticize public figures online.</p>
+            </div>
+            <div class="card">
+                <h3>Data Privacy Act</h3>
+                <p>A look at how personal data protection intersects with investigative journalism.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="advocacy">
+        <h2 class="section-title">Advocacy: Think Before You Click</h2>
+        <div class="infographic">
+            <div class="info-point">
+                <div class="info-icon">01</div>
+                <h4>Verify Sources</h4>
+                <p>Ensure the information is from a credible, primary source before sharing.</p>
+            </div>
+            <div class="info-point">
+                <div class="info-icon">02</div>
+                <h4>Check Impact</h4>
+                <p>Consider if your words could incite unnecessary harm or panic.</p>
+            </div>
+            <div class="info-point">
+                <div class="info-icon">03</div>
+                <h4>Know the Law</h4>
+                <p>Understand your local cyber-libel and privacy statutes.</p>
+            </div>
+        </div>
+        
+        <h3 style="margin: 40px 0 20px; text-align:center;">Educational Awareness</h3>
+        <div class="meme-gallery">
+            <div class="meme-item"><img src="dasdsa.png" alt="Meme series: dasdsa"></div>
+            <div class="meme-item"><img src="9860f199-918c-4cbc-9761-733b6611c1da.jfif" alt="Meme series: 9860f199-918c-4cbc-9761-733b6611c1da"></div>
+            <div class="meme-item">Meme: Secure Passwords</div>
+            <div class="meme-item">Meme: Public vs Private</div>
+        </div>
+    </section>
+
+    <section id="reflection">
+        <h2 class="section-title">Reflection</h2>
+        <div class="card" style="max-width: 800px; margin: 0 auto;">
+            <p>The intersection of technology and law is the frontier of modern civil rights. Through this portfolio, we explore the delicate balance between keeping the internet a safe space for all and ensuring that the digital world remains a vibrant marketplace of ideas.</p>
+        </div>
+    </section>
+
+    <a href="#home" id="backToTop">↑</a>
+
+</body>
+</html>
